@@ -2,16 +2,26 @@
 <html>
 <head>
     <title>POST</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<div class="title">    
     <h1>Welcome to my Page</h1>
-    </div>
-<link rel="stylesheet" type="text" href="sytle.css">
+    
 </head>
 
     <body>
     
+        <h1>Hello</h1>
+        
     
     </body>
+<script>
+ $.ajax({
+    url: "http://www.fvi-grad.com:404/quote",
+    success: function(resp, textStatus, jqxhr){
+    console.log(resp);
 
+}
+});   
+    
+    </script>
 </html>
