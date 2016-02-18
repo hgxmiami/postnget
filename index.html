@@ -4,24 +4,36 @@
     <title>POST</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <h1>Welcome to my Page</h1>
+    <h1 align="center">Welcome to my Page</h1>
     
 </head>
 
     <body>
+        <img id="gary"  align="center" src="images/colman.jpg">
     
-        <h1>Hello</h1>
-        
-    
+        <h1 align="center">Hello</h1>
+     <div onclick="tapGary()" class="button" align="center"> Click on me for a Quote</div>    
+     <div id="quote"></div>
     </body>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
  $.ajax({
-    url: "http://www.fvi-grad.com:404/quote",
+    url: "http://www.fvi-grad.com:4004/quote",
     success: function(resp, textStatus, jqxhr){
-    console.log(resp);
+    $("#quote").text(resp.quote)
 
 }
-});   
+});
+
+    function tapGary(){
+        $.ajax({
+    url: "http://www.fvi-grad.com:4004/quote",
+    success: function(resp, textStatus, jqxhr){
+    $("#quote").text(resp.quote)
+
+}
+});
+}
     
     </script>
 </html>

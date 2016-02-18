@@ -1,6 +1,57 @@
 body{
-  background-color: #d8da3d;
+  
+  background-image: "img/colman.jpg";
 }
 h1 {
     font-family: sans-serif; 
+}
+.button {
+  background: #4162a8;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  color: #fff;
+  font: bold 20px "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding: 10px 0 12px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px #1e2d4d;
+  width: 150px;
+  -webkit-background-clip: padding-box;
+  position: absolute;
+  align-content: center;
+  left: 44%;
+}
+
+#quote {
+ align-content: center;
+ background: red; 
+ padding: 3px 3px 3px 3px; 
+ border-style: solid;
+ border-width: medium;       
+ border-color: black;
+ position: absolute;
+ left: 50%;
+ top: 88%;
+ transform: translateY(-20px);
+ transform: translateX(-50%);
+ 
+    
+}
+#gary {
+    position: absolute;
+    z-index: -25;
+    top: 25%;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    
 }
